@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Full Mamba KO Full Attention on Unconditional Video Generation Longer than Hundreds and Thousands of Frames.">
+  <meta name="keywords" content="3D-Navigation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full Mamba KO Full Attention on Unconditional Video Generation Longer than Hundreds and Thousands of Frames</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Full Mamba KO Full Attention on Unconditional Video Generation Longer than Hundreds and Thousands of Frames</h1>
+          <div class="is-size-5 publication-authors">
+            Anonymous CVPR Submission
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            ID: 5716
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted playsinline loop height="100%">
+        <source src="assets/demo.mp4"
+                type="video/mp4">
+      </video> -->
+      <h2 class="subtitle has-text-centered">
+        We propose LongMV, a novel architecture based on latent diffusion Mamba tailored for generating videos of unprecedented length 
+        while addressing the computational challenges of existing methods.
+      </h2>
+    </div>
+    <div class="hero-body has-text-centered">
+      <img src="assets/title_img.png" width="480" height="360"/>
+      <h2 class="subtitle has-text-centered">
+        Our LongMV leverages a unique architecture that integrates a spatial-temporal diffusion process, significantly reducing the required floating point operations. 
+        Furthermore, we employ a flow-based stochastic differential equation to accelerate the sampling process, ensuring efficient and high-quality video generation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <p>
+            Video generation has predominantly relied on attention mechanisms within diffusion transformer blocks. 
+            However, attention-based approaches face inherent limitations, including quadratic complexity and high computational costs, making them less practical for long-duration video synthesis. 
+            Additionally, the domain of video generation extending to hundreds or thousands of frames, such as 1024 frames, remains underexplored. 
+            In this paper, we introduce LongMV, a novel latent diffusion Mamba framework tailored for generating videos of unprecedented length while addressing the computational challenges of existing methods. 
+            Specifically, our LongMV leverages a unique architecture that integrates a spatial-temporal diffusion process, significantly reducing the required floating point operations (FLOPs). 
+            Furthermore, we employ a flow-based stochastic differential equation to accelerate the sampling process, ensuring efficient and high-quality video generation. 
+            This new approach minimizes computational demands while maintaining or surpassing the fidelity of generated videos. We validate the effectiveness of LongMV on diverse datasets, including FaceFrontics for facial animations, SkyTimelapse for sky-cloud dynamics, and YouTube Driving for egocentric scenarios. 
+            Experimental results demonstrate that LongMV outperforms state-of-the-art methods in both efficiency and video quality for unconditional long-term video generation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <hr>
+        <!-- <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> -->
+        <div class="column has-text-centered">
+          <img src="assets/table_sota.png" width="480" height="360"/>
+          <p>Comparison results on FaceFrontics, SkyTimelapse, and UCF101 datasets for long video generation with 128 frames. Our LongMV achieves the best performance. </p>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_sota_cost.png" width="960" height="640"/>
+          <p>Comparison results on long video generation efficiency. Our LongMV can even generate up to 16,384 frames for the image resolution of 128.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="hero-body">
+        <h2 class="title is-3">Experimental Analyses</h2>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_ablation.png" width="480" height="320"/>
+          <p>Ablation studies on mamba and flow on FaceFrontics and SkyTimelapse datasets for long video generation with 128 frames. </p>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_frames.png" width="480" height="320"/>
+          <p>Ablation studies on the number of generation frames on FaceFrontics and SkyTimelapse datasets for long video generation. </p>
+        </div>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/table_scale.png" width="480" height="320"/>
+          <p>Ablation studies on the model scale on FaceFrontics datasets for long video generation. </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Qualitative Long Video Generation Visualization</h2>
+        <hr>
+        <div class="column has-text-centered">
+          <img src="assets/vis_ffs.png" width="960" height="640"/>
+          <p>Qualitative visualization of video generation on FaceFrontics dataset. Our LongMV can operate the denoising process from videos to generate high-fidelity and diverse video clips.</p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="assets/vis_sky.png" width="960" height="640"/>
+          <p>Qualitative visualization of video generation on SkyTimelapse dataset. Our LongMV can operate the denoising process from videos to generate high-fidelity and diverse video clips. </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="assets/vis_ytb.png" width="960" height="640"/>
+          <p>Qualitative visualization of video generation on YouTube Driving dataset. Our LongMV can operate the denoising process from videos to generate high-fidelity and diverse video clips. </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Thanks for reading our work!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
